@@ -2,7 +2,7 @@
 # http://www.talkingquickly.co.uk/2014/01/deploying-rails-apps-to-a-vps-with-capistrano-v3/
 
 set :application, 'rails_aws'
-set :deploy_user, 'awsuser'
+set :deploy_user, 'ubuntu'
 
 # setup repo details
 set :scm, :git
