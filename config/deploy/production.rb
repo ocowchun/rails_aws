@@ -9,6 +9,8 @@ set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
 # specify server DNS name, user & roles
 server '54.199.253.154', user: 'ubuntu', roles: %w{web app db}, primary: true
 
+ssh_options[:keys] = ["usr/Path/To/ProdKey/ec2-prod-key.pem"]
+
 set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/#{fetch(:full_app_name)}"
 
 # dont try and infer something as important as environment from
