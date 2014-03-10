@@ -11,7 +11,7 @@ server '54.199.253.154', user: 'ubuntu', roles: %w{web app db}, primary: true
 
 # ssh_options[:keys] = ["usr/Path/To/ProdKey/ec2-prod-key.pem"]
 set :ssh_options, {
-  keys:["usr/Path/To/ProdKey/ec2-prod-key.pem"]
+  keys:["users/ocowchun/Documents/Achilles/imagic.pem"]
 }
 
 set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/#{fetch(:full_app_name)}"
