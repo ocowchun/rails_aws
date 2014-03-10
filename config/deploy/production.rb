@@ -7,7 +7,7 @@ set :branch, "master"
 set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
 
 # specify server DNS name, user & roles
-server '54.199.253.154', user: 'ubuntu', roles: %w{web app db},ssh_options: {
+server '54.199.252.203', user: 'ubuntu', roles: %w{web app db},ssh_options: {
   keys:["/Users/ocowchun/Documents/Achilles/imagic_test.pem"]
 }, primary: true
 
