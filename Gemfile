@@ -29,7 +29,18 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
+
+group :development do
+  # In development use SQLLite
+  gem 'sqlite3'
+
+  # Use Capistrano for deployment
+  gem 'capistrano', '~> 3.0.1'
+  gem 'capistrano-rails', '~> 1.1.0'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rbenv', "~> 2.0"
+end
 
 # Deploy with Capistrano
 # gem 'capistrano'
